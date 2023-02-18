@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ @-webkit-keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+html {
+    background-image: url(Pics/F.jpeg);
+    background-repeat: no-repeat; 
+    background-position: center center;  
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+
+.title, .dsc {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 30px;
+    margin-top: 150px;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #f855dd9c;
+    color: black;
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+}
+
+.menu-link:hover {
+    color: #f855dd9c;
+    background-color: #fff;
+    border: 1px solid #f855dd9c;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.item {
+    width: 263px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.item-pic {
+    width: 100%;
+}
+
+.txt-box {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.item-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.anim {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
